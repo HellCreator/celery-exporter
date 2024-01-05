@@ -175,19 +175,6 @@ Pull requests are welcome here!
 
 To start developing run commands below to prepare your environment after the `git clone` command:
 ```shell
-# Install dependencies and pre-commit hooks
-poetry install
-pre-commit install
-
-# Test everything works fine
-pre-commit run --all-files
-docker-compose up -d
-pytest --broker=memory      --log-level=DEBUG
-pytest --broker=redis       --log-level=DEBUG
-pytest --broker=rabbitmq    --log-level=DEBUG
-```
-Local setup for macos:
-```shell
 # Install tools
 brew install poetry
 brew install pre-commit
